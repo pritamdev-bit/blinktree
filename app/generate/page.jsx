@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import React, { use, useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 
-const page = ({ searchParams }) => {
+const GeneratePage = ({ searchParams }) => {
   const url = use(searchParams)
 
   const router = useRouter()
@@ -95,7 +95,7 @@ const page = ({ searchParams }) => {
 
       if (response.success) {
         toast.success(response.message)
-        console.log(response.data);
+    
         const url = handle
         setHandle("")
         setLink1("")
@@ -224,4 +224,4 @@ const page = ({ searchParams }) => {
   )
 }
 
-export default page
+export default GeneratePage

@@ -1,5 +1,7 @@
 // app/about/page.tsx
 
+import Link from "next/link";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#502274] flex flex-col items-center justify-center px-6 py-40">
@@ -56,12 +58,12 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-12">
-          <a
+          <Link
             href="/"
             className="inline-block px-6 py-3 bg-indigo-600 text-white font-medium rounded-full shadow hover:bg-indigo-700 transition"
           >
             Get Started with BlinkTree
-          </a>
+          </Link>
         </div>
       </div>
     </main>

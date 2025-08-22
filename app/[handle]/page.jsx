@@ -5,7 +5,7 @@ import QRCode from 'react-qr-code'
 import Link from 'next/link'
 
 
-const handlePage = ({ params }) => {
+const HandlePage = ({ params }) => {
   const handle = use(params).handle
   const [link1, setLink1] = useState("")
   const [link2, setLink2] = useState("")
@@ -137,4 +137,4 @@ const handlePage = ({ params }) => {
   )
 }
 
-export default handlePage
+export default HandlePage

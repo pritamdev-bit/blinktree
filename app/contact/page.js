@@ -14,8 +14,6 @@ export default function ContactPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", form);
-        // You can replace this with API call (e.g. send email)
         const res = await fetch("/api/feedback", {
             method: "POST",
             body: JSON.stringify(form),
